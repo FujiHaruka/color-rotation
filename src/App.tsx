@@ -14,6 +14,8 @@ import Badge from "@material-ui/core/Badge";
 import Tooltip from "@material-ui/core/Tooltip";
 import WarningIcon from "@material-ui/icons/Warning";
 import * as convert from "@csstools/convert-colors";
+import IconButton from "@material-ui/core/IconButton";
+import AutorenewIcon from "@material-ui/icons/Autorenew";
 import Color from "color";
 
 type ColorArray = [number, number, number];
@@ -27,8 +29,9 @@ const rgbValue = (c: number) => Math.ceil((c / 100) * 255);
 const rgbString = ([r, g, b]: number[]) =>
   `rgb(${rgbValue(r)},${rgbValue(g)},${rgbValue(b)})`;
 
-const DEFAULT_COLOR = css2rgb("#f28561");
-const DEFAULT_COUNT = 12;
+const DEFAULT_COLOR_STRING = "rgb(241,133,96)";
+const DEFAULT_COLOR = css2rgb(DEFAULT_COLOR_STRING);
+const DEFAULT_COUNT = 7;
 
 const rotateLCHColor = (base: ColorArray, degree: number) => {
   const [l, c, h] = convert.rgb2lch(...base);
@@ -103,7 +106,7 @@ const useStyles = makeStyles((theme) => ({
 const ColorInput: FC<{
   onChangeColor: (color: ColorArray) => void;
 }> = ({ onChangeColor }) => {
-  const [value, setValue] = useState("#f28561");
+  const [value, setValue] = useState(DEFAULT_COLOR_STRING);
   const [error, setError] = useState(false);
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const next = event.target.value;
@@ -120,13 +123,27 @@ const ColorInput: FC<{
       }
     }
   };
+  const onUpdateRandom = () => {
+    const rgb = [0, 0, 0].map(() =>
+      Math.ceil(Math.random() * 100)
+    ) as ColorArray;
+    setValue(rgbString(rgb));
+    onChangeColor(rgb);
+  };
   return (
-    <TextField
-      label="Standard color"
-      error={error}
-      value={value}
-      onChange={onChange}
-    />
+    <>
+      <Tooltip title="Random color">
+        <IconButton onClick={onUpdateRandom}>
+          <AutorenewIcon />
+        </IconButton>
+      </Tooltip>
+      <TextField
+        label="Standard color"
+        error={error}
+        value={value}
+        onChange={onChange}
+      />
+    </>
   );
 };
 
