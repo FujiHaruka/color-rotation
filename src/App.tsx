@@ -225,7 +225,7 @@ const App: FC = () => {
       <Container maxWidth="md">
         <Paper variant="outlined" className={classes.paper}>
           <header className={classes.header}>
-            <h1>Hue rotation: HCL vs LHC</h1>
+            <h1>Hue rotation: LCH vs HSL</h1>
           </header>
           <form className={classes.form} noValidate autoComplete="off">
             <ColorInput onChangeColor={setColor} />
