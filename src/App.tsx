@@ -138,6 +138,7 @@ const ColorInput: FC<{
         </IconButton>
       </Tooltip>
       <TextField
+        id="color-input"
         label="Standard color"
         error={error}
         value={value}
@@ -170,6 +171,7 @@ const CountInput: FC<{
   };
   return (
     <TextField
+      id="count-input"
       error={error}
       label="Count"
       type="number"
