@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/color-rotation/static/css/main.34de6062.chunk.css",
-    "main.js": "/color-rotation/static/js/main.4b685ae2.chunk.js",
-    "main.js.map": "/color-rotation/static/js/main.4b685ae2.chunk.js.map",
+    "main.js": "/color-rotation/static/js/main.0504ab82.chunk.js",
+    "main.js.map": "/color-rotation/static/js/main.0504ab82.chunk.js.map",
     "runtime-main.js": "/color-rotation/static/js/runtime-main.fb27fba9.js",
     "runtime-main.js.map": "/color-rotation/static/js/runtime-main.fb27fba9.js.map",
-    "static/js/2.fa1611be.chunk.js": "/color-rotation/static/js/2.fa1611be.chunk.js",
-    "static/js/2.fa1611be.chunk.js.map": "/color-rotation/static/js/2.fa1611be.chunk.js.map",
+    "static/js/2.e66b3c6c.chunk.js": "/color-rotation/static/js/2.e66b3c6c.chunk.js",
+    "static/js/2.e66b3c6c.chunk.js.map": "/color-rotation/static/js/2.e66b3c6c.chunk.js.map",
     "index.html": "/color-rotation/index.html",
-    "precache-manifest.53055eebc91c4e665d03793485b857ba.js": "/color-rotation/precache-manifest.53055eebc91c4e665d03793485b857ba.js",
+    "precache-manifest.9b8169a34af4c50616931d0645bedbe8.js": "/color-rotation/precache-manifest.9b8169a34af4c50616931d0645bedbe8.js",
     "service-worker.js": "/color-rotation/service-worker.js",
     "static/css/main.34de6062.chunk.css.map": "/color-rotation/static/css/main.34de6062.chunk.css.map",
-    "static/js/2.fa1611be.chunk.js.LICENSE.txt": "/color-rotation/static/js/2.fa1611be.chunk.js.LICENSE.txt"
+    "static/js/2.e66b3c6c.chunk.js.LICENSE.txt": "/color-rotation/static/js/2.e66b3c6c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fb27fba9.js",
-    "static/js/2.fa1611be.chunk.js",
+    "static/js/2.e66b3c6c.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.4b685ae2.chunk.js"
+    "static/js/main.0504ab82.chunk.js"
   ]
 }
